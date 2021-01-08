@@ -1,0 +1,22 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid rgb(32, 52, 117);
+}
+
+.round-img img {
+    width: 100%;
+}
