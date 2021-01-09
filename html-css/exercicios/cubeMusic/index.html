@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines & crafts</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        <p class="title">Clique no cubo!</p>
+        <img onclick="playMusic()" class="cube" src="assets/img/padded-minecube.png" alt="A lone, floating minecube">
+        <audio id="mineaudio">
+            <source src="assets/midia/Sweden.mp3" type="audio/mpeg" autoplay>
+        </audio>
+
+        <script>
+        var cube = document.getElementsByClassName("cube");
+        var title = document.getElementsByClassName("title");
+
+        function playMusic(){
+                document.getElementById("mineaudio").play();
+                cube[0].classList.add("moving");
+                title[0].classList.add("hidden");
+            }
+        </script>
+</body>
+</html>
