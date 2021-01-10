@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locale String</title>
+</head>
+<body>
+    <script>
+        var dinheiro = 1550.50; 
+        dinheiro = dinheiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        document.write(dinheiro)
+
+    </script>
+</body>
+</html>
